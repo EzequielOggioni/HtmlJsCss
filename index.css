@@ -1,0 +1,23 @@
+#listado_de_frutas, #listado_de_ensalada {
+    background: RED;
+    }
+    .estilo_de_li{
+    color: #B1B1B1;
+    border: 1px solid #000;
+    }
+    
+    #listado_de_frutas li{
+    color: #B1FFB1;
+    border: 1px solid #000;
+    }
+    
+    #listado_de_frutas #lista1 {
+        /* background-color: rgb(140, 169, 173); */
+        background-color: #8ca9ad;
+        
+    }
+
+    .scroll{
+        max-height: 30px;
+        overflow-y: scroll;
+    }

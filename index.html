@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta viewport="" />
+    <title>
+        Calculadora
+    </title>
+    <script src="helper.js"></script>
+    <script src="archivo.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <form method="GET" action="">
+        <input type="text" id="nombre" name="nombre" />
+        <input type="text" id="apellido" name="apellido" />
+        <input type="text" id="edad" name="edad" />
+        <select id="genero" name="genero" class="scroll">
+            <option value="masculino">masculino</option>
+            <option value="femenino">femenino</option>
+        </select>
+        <br>
+        <label>Masculino</label>
+        <input type="radio" value="masculino" id="rdoMasculino" name="genero2">
+        <label>Femenino</label>
+        <input type="radio" value="femenino" name="genero2">
+        <br>
+        <label>Femenino</label>
+        <input type="checkbox" value="femenino" id="chkFemenino" onclick="quitarChk('chkFemenino','chkMasculino')">
+        <label>Masculino</label>
+        <input type="checkbox" value="masculino" id="chkMasculino" onclick="quitarChk('chkMasculino','chkFemenino')">
+
+
+        <input type="button" value="Guardar" onclick="agregar()" />
+
+        <br>
+        <input type="button" value="Promedio" onclick='promedio()' />
+
+        <br>
+        <!-- <select id="generoBuscado" class="scroll">
+        <option value="masculino" >masculino</option>
+        <option value="femenino" >femenino</option>        
+    </select> -->
+        <input type="button" value="Promedio Fem" onclick='promedioGenero("femenino")' />
+        <input type="button" value="Promedio Mas" onclick='promedioGenero("masculino")' />
+
+
+        <button>aaa</submit>
+    </form>
+</body>
+
+</html>
